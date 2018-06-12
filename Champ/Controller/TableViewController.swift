@@ -33,13 +33,12 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! TableViewCell
         // Configure the cell...
         cell.photoImage.download(from: DataService.shared.champs[indexPath.row].url_Champ)
-        cell.levelLabel.text = DataService.shared.champs[indexPath.row].level_Champ
+        cell.levelLabel.text = "Level: \(DataService.shared.champs[indexPath.row].level_Champ)"
         cell.nameENLabel.text = DataService.shared.champs[indexPath.row].nameEN_Champ
         cell.nameVILabel.text = DataService.shared.champs[indexPath.row].nameVN_Champ
-        print(DataService.shared.champs[indexPath.row].level_Champ)
         return cell
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (UIScreen.main.bounds.height / 10)
+        return (UIScreen.main.bounds.height / 9)
     }
 }
