@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		18FF6ACF20D0194B00A54961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF6ACE20D0194B00A54961 /* AppDelegate.swift */; };
-		18FF6AD120D0194B00A54961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF6AD020D0194B00A54961 /* ViewController.swift */; };
 		18FF6AD420D0194B00A54961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FF6AD220D0194B00A54961 /* Main.storyboard */; };
 		18FF6AD620D0194C00A54961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FF6AD520D0194C00A54961 /* Assets.xcassets */; };
 		18FF6AD920D0194C00A54961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FF6AD720D0194C00A54961 /* LaunchScreen.storyboard */; };
+		18FF6AE320D019FA00A54961 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF6AE120D019FA00A54961 /* DataService.swift */; };
+		18FF6AE420D019FA00A54961 /* Champ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF6AE220D019FA00A54961 /* Champ.swift */; };
+		18FF6AE920D01A2500A54961 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF6AE520D01A2500A54961 /* TableViewController.swift */; };
+		18FF6AEA20D01A2500A54961 /* Extension Uiimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF6AE620D01A2500A54961 /* Extension Uiimage.swift */; };
+		18FF6AEB20D01A2500A54961 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF6AE720D01A2500A54961 /* TableViewCell.swift */; };
+		18FF6AEC20D01A2500A54961 /* Extension UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF6AE820D01A2500A54961 /* Extension UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18FF6ACB20D0194B00A54961 /* Champ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Champ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FF6ACE20D0194B00A54961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18FF6AD020D0194B00A54961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18FF6AD320D0194B00A54961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18FF6AD520D0194C00A54961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18FF6AD820D0194C00A54961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18FF6ADA20D0194C00A54961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FF6AE120D019FA00A54961 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		18FF6AE220D019FA00A54961 /* Champ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Champ.swift; sourceTree = "<group>"; };
+		18FF6AE520D01A2500A54961 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		18FF6AE620D01A2500A54961 /* Extension Uiimage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension Uiimage.swift"; sourceTree = "<group>"; };
+		18FF6AE720D01A2500A54961 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		18FF6AE820D01A2500A54961 /* Extension UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,50 @@
 			isa = PBXGroup;
 			children = (
 				18FF6ACE20D0194B00A54961 /* AppDelegate.swift */,
-				18FF6AD020D0194B00A54961 /* ViewController.swift */,
+				18FF6AEE20D01A3700A54961 /* Utilities + Extension */,
+				18FF6AED20D01A3000A54961 /* View */,
+				18FF6AEF20D01A4800A54961 /* Controller */,
+				18FF6AE020D019FA00A54961 /* Model */,
 				18FF6AD220D0194B00A54961 /* Main.storyboard */,
 				18FF6AD520D0194C00A54961 /* Assets.xcassets */,
 				18FF6AD720D0194C00A54961 /* LaunchScreen.storyboard */,
 				18FF6ADA20D0194C00A54961 /* Info.plist */,
 			);
 			path = Champ;
+			sourceTree = "<group>";
+		};
+		18FF6AE020D019FA00A54961 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18FF6AE120D019FA00A54961 /* DataService.swift */,
+				18FF6AE220D019FA00A54961 /* Champ.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18FF6AED20D01A3000A54961 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18FF6AE720D01A2500A54961 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18FF6AEE20D01A3700A54961 /* Utilities + Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18FF6AE620D01A2500A54961 /* Extension Uiimage.swift */,
+				18FF6AE820D01A2500A54961 /* Extension UIView.swift */,
+			);
+			path = "Utilities + Extension";
+			sourceTree = "<group>";
+		};
+		18FF6AEF20D01A4800A54961 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18FF6AE520D01A2500A54961 /* TableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FF6AD120D0194B00A54961 /* ViewController.swift in Sources */,
+				18FF6AEA20D01A2500A54961 /* Extension Uiimage.swift in Sources */,
+				18FF6AE320D019FA00A54961 /* DataService.swift in Sources */,
 				18FF6ACF20D0194B00A54961 /* AppDelegate.swift in Sources */,
+				18FF6AEB20D01A2500A54961 /* TableViewCell.swift in Sources */,
+				18FF6AE420D019FA00A54961 /* Champ.swift in Sources */,
+				18FF6AE920D01A2500A54961 /* TableViewController.swift in Sources */,
+				18FF6AEC20D01A2500A54961 /* Extension UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
